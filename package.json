@@ -1,0 +1,15 @@
+{
+  "name": "Bananas-In-P.Y.J.A.M.A.S-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build Resources/CSS/main.css -o Resources/CSS/stylesBuilded.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^1.5.2"
+  }
+}

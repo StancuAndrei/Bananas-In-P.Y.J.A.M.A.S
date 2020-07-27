@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANANAS in P.Y.J.M.S</title>
     <link rel="stylesheet" href="resources/CSS/styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="resources/CSS/stylesBuilded.css">
     <link rel="stylesheet" href="resources/CSS/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e6a045db1b.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module" src="Scripts/Js/app.js" defer></script>
 </head>
 
 <body class="font-Montserrat">
@@ -17,66 +20,97 @@
     <header class="banner bg-primary_green pb-12 pt-16 lg:pt-24">
         <nav class="flex justify-between flex-wrap items-center bg-secondary_green p-4 lg:p-8">
             <div class="text-white  flex flex-shrink-0 lg:ml-40 ">
-              <a class=" font-semibold text-xl lg:text-md_size " href='#'>Bananas In P.Y.J.A.M.A.S</a>
+                <a class=" font-semibold text-xl lg:text-md_size " href='#'>
+                    Bananas In P.Y.J.A.M.A.S
+                </a>
             </div>
 
-        <button id="nav-toggle" class="bg-primary_green mr-6 md:mr-24  sm:text-sm point-cursor items-center lg:hidden block  hover:bg-dark_green text-white font-semibold rounded-lg">
-            <span id="menu" class=" font-semibold text-sm mr-1 ">MENU</span><i class=" fa fa-bars " aria-hidden="true"></i>
-        </button>
+            <button id="nav-toggle" class="bg-primary_green mr-6 md:mr-24  sm:text-sm point-cursor items-center lg:hidden block  hover:bg-dark_green text-white font-semibold rounded-lg">
+                <span id="menu" class=" font-semibold text-sm mr-1 ">
+                    MENU
+                </span>
+                <i class=" fa fa-bars " aria-hidden="true"></i>
+            </button>
 
-        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto sd:hidden pt-6 lg:pt-0" id="nav-content">
-            <ul class="list-reset lg:flex justify-end flex-1 items-center">
-                <li class="mr-3">
-                    <a class=" uppercase text-white font-semibold inline-block py-2 mr-6 hover:text-primary_green" href="#">Members</a>
-                </li>
-                <li class="mr-3">
-                    <a class=" uppercase text-white font-semibold inline-block  py-2 mr-48 hover:text-primary_green" href="#footer">About us</a>
-                </li>
-            </ul>
-        </div>
-            
-        </nav>   
-    </header>   
+            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto sd:hidden pt-6 lg:pt-0" id="nav-content">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                    <li class="mr-3">
+                        <a class=" uppercase text-white font-semibold inline-block py-2 mr-6 hover:text-primary_green" href="#members">
+                            Members
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a class=" uppercase text-white font-semibold inline-block  py-2 mr-48 hover:text-primary_green" href="#footer">
+                            About us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
 
 <!-- Banner -->
 
         <div class=" banner bg-primary_green pb-12">
 
-            <img class="m-auto w-52 h-56 lg:w-54 lg:h-64  lg:pt-4" src="./Resources/Images/banana.png" id="banana"> 
-            <p class=" text-center text-white uppercase font-semibold md:m-3 text-5xl lg:pt-5 lg:text-6xl mx-8 my-2">We're good, ask our moms</p>
+            <img class="m-auto w-52 h-56 lg:w-54 lg:h-64  lg:pt-4" src="./Resources/Images/banana.png" id="banana">
+            <p class=" text-center text-white uppercase font-semibold md:m-3 text-5xl lg:pt-5 lg:text-6xl mx-8 my-2">   We're good, ask our moms
+            </p>
 
             <div class=" separator mt-3 flex justify-center items-center ">
-                
+
                 <div class=" custom-line"></div>
                 <div>
                     <i class=" fa fa-star"></i>
                 </div>
                 <div class="custom-line"></div>
-                
+
             </div>
-            <p class="text-center text-white uppercase font-semibold mt-8 pb-24 text-xl " >Ceva interesant de scris ca un fel de Motto pentru noi:)) </p>
- 
+            <p class="text-center text-white uppercase font-semibold mt-8 pb-24 text-xl " >
+                Ceva interesant de scris ca un fel de Motto pentru noi:))
+            </p>
+
         </div>
 
-    <!--MEMBRII -->
+<!-- MODAL -->
 
-    <h2 class="members page-section-heading text-center text-uppercase text-secondary mb-0 text-4xl">MEMBERS</h2>
+    <div id="backdrop" class="backdrop hidden">
+      <div class="modal md:table rounded-lg" id="ModalTest">
+
+      </div>
+    </div>
+
+<!-- MEMBRII -->
+
+    <h2 class="members page-section-heading text-center text-uppercase text-secondary mb-0 text-4xl mt-10" id="members">      MEMBERS
+    </h2>
+
     <div class="divider-custom">
         <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon"><img class="banana block rounded-full" src="./Resources/Images/banana_in_pijama.png"></div>
+        <div class="divider-custom-icon">
+            <img class="banana block rounded-full" src="./Resources/Images/banana_in_pijama.png">
+        </div>
         <div class="divider-custom-line"></div>
     </div>
 
     <div class="container my-12 mx-auto px-4 md:px-12">
         <div class="flex flex-wrap -mx-1 lg:-mx-4">
+
             <!--Person-->
             <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+
                 <!--Column-->
                 <article class="overflow-hidden rounded-lg shadow-lg modal-open">
                     <img src="./Resources/Images/Alina.jpg" class="photo block h-auto w-full " />
                     <div class="flex-row items-center justify-between leading-none p-2 md:p-4 text-center">
-                        <h1 class="name no-underline text-black text-2xl">Alina Neculai </h1>
-                        <button class="btn  border border-4 rounded py-2 px-4  m-2"><i class="far fa-eye pr-2"></i>View profile</button>
+                        <h1 class="name no-underline text-black text-2xl">
+                            Alina Neculai
+                        </h1>
+                        <button class="btn border border-4 rounded py-2 px-4 m-2 userId" data-userId="1">
+                            <i class="far fa-eye pr-2"></i>
+                            View profile
+                        </button>
                     </div>
                 </article>
             </div>
@@ -88,10 +122,15 @@
             <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 ">
                 <!--Column-->
                 <article class="overflow-hidden rounded-lg shadow-lg ">
-                    <img src="./Resources/Images/eu.jpg" class="photo block h-auto w-full " />
+                    <img src="./Resources/Images/Nicoleta.jpg" class="photo block h-auto w-full " />
                     <div class="flex-row items-center justify-between leading-none p-2 md:p-4 text-center">
-                        <h1 class="name no-underline text-black text-2xl">Nicoleta Chirigiu</h1>
-                        <button class="btn  border border-4 rounded py-2 px-4  m-2"><i class="far fa-eye pr-2"></i>View profile</button>
+                        <h1 class="name no-underline text-black text-2xl">
+                            Nicoleta Chirigiu
+                        </h1>
+                        <button class="btn  border border-4 rounded py-2 px-4 m-2 userId" data-userId="2">
+                            <i class="far fa-eye pr-2"></i>
+                            View profile
+                        </button>
                     </div>
                 </article>
             </div>
@@ -103,10 +142,16 @@
             <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 ">
                 <!--Column-->
                 <article class="overflow-hidden rounded-lg shadow-lg">
-                    <img src="./Resources/Images/IMG_20181116_212557_397.jpg" class="photo block h-auto w-full " />
+                    <img src="./Resources/Images/eu.jpg" class="photo block h-auto w-full " />
                     <div class="flex-row items-center justify-between leading-none p-2 md:p-4 text-center ">
-                        <h1 class="name no-underline text-black text-2xl">Andrei Stancu</h1>
-                        <button class="btn  border border-4 rounded py-2 px-4  m-2"><i class="far fa-eye pr-2"></i>View profile</button>
+                        <h1 class="name no-underline text-black text-2xl">
+                            Andrei Stancu
+
+                            </h1>
+                        <button class="btn  border border-4 rounded py-2 px-4 m-2 userId" data-userId="3">
+                            <i class="far fa-eye pr-2"></i>
+                            View profile
+                        </button>
                     </div>
                 </article>
             </div>
@@ -121,8 +166,13 @@
                 <article class="overflow-hidden rounded-lg shadow-lg ">
                     <img src="./Resources/Images/Robert.jpg" class="photo block h-auto w-full " />
                     <div class="flex-row items-center justify-between leading-none p-2 md:p-4 text-center ">
-                        <h1 class="name no-underline text-black text-2xl">Robert Chirila</h1>
-                        <button class="btn  border border-4 rounded py-2 px-4  m-2"><i class="far fa-eye pr-2"></i>View profile</button>
+                        <h1 class="name no-underline text-black text-2xl">
+                            Robert Chirila
+                        </h1>
+                        <button class="btn  border border-4 rounded py-2 px-4 m-2 userId" data-userId="4">
+                            <i class="far fa-eye pr-2"></i>
+                            View profile
+                        </button>
                     </div>
                 </article>
             </div>
@@ -135,10 +185,15 @@
             <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 ">
                 <!--Column-->
                 <article class="overflow-hidden rounded-lg shadow-lg ">
-                    <img src="./Resources/Images/eu.jpg" class="photo block h-auto w-full " />
+                    <img src="./Resources/Images/Vicentiu.png" class="photo block h-auto w-full " />
                     <div class="flex-row items-center justify-between leading-none p-2 md:p-4 text-center ">
-                        <h1 class="name no-underline text-black text-2xl">Vicentiu Bota</h1>
-                        <button class="btn  border border-4 rounded py-2 px-4  m-2"><i class="far fa-eye pr-2"></i>View profile</button>
+                        <h1 class="name no-underline text-black text-2xl">
+                            Vicentiu Bota
+                        </h1>
+                        <button class="btn  border border-4 rounded py-2 px-4 m-2 userId" data-userId="5">
+                            <i class="far fa-eye pr-2"></i>
+                            View profile
+                        </button>
                     </div>
                 </article>
             </div>
@@ -150,16 +205,22 @@
             <!--Person-->
             <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 ">
                 <!--Column-->
-                <article class="overflow-hidden rounded-lg shadow-lg ">
-                    <img src="./Resources/Images/eu.jpg" class="photo block h-auto w-full " />
+                <article class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="./Resources/Images/Marian.jpg" class="photo block h-auto w-full " />
                     <div class="flex-row items-center justify-between leading-none p-2 md:p-4 text-center ">
-                        <h1 class="name no-underline text-black text-2xl">Marian Nechifor</h1>
-                        <button class="btn  border border-4 rounded py-2 px-4  m-2"><i class="far fa-eye pr-2"></i>View profile</button>
+                        <h1 class="name no-underline text-black text-2xl">
+                            Marian Nechifor
+                        </h1>
+                        <button class="btn  border border-4 rounded py-2 px-4 m-2 userId" data-userId="6">
+                            <i class="far fa-eye pr-2"></i>
+                            View profile
+                        </button>
                     </div>
                 </article>
             </div>
             <!--END Column-->
             <!--END Person-->
+
         </div>
     </div>
 
@@ -169,23 +230,21 @@
         <p class=" font-semibold text-white  text-4xl lg:text-5xl text-center pt-16 pb-3 ">About us</p>
 
         <div class=" separator flex justify-center items-center ">
-                
             <div class=" custom-line"></div>
             <div>
                 <i class=" fa fa-star"></i>
             </div>
             <div class="custom-line"></div>
-
         </div>
-        
+
         <p class="  text-center text-white font-medium text-xl  mt-8 mb-32 mx-20 lg:mx-32" > CEVA DESPRE NOI SI NU STIM CE NOI SUNTEM CEI MAI TARI ORICUM B0$$ SENSE NON SENSE NON SENSE NON SENSE NON SENSE NON SENSENON SENSE NON SENSE NON SENSE NON SENSE NON SENSE NON SENSE NON SENSE NON SENSE NON SENSE NON SENSE
-            NON SENSE NON SENSE NON SENSE NON SENSE NON SENSE NON SENSENON NON SENSENON SENSE NON SENSE NON SENSE NON SNON SENSE NON SENSENON SENSE NON SENSE NON SENSE NON SENSE NON 
+            NON SENSE NON SENSE NON SENSE NON SENSE NON SENSE NON SENSENON NON SENSENON SENSE NON SENSE NON SENSE NON SNON SENSE NON SENSENON SENSE NON SENSE NON SENSE NON SENSE NON
              NON SENSE
         </p>
 
-    </footer> 
-    
-    <script type="text/javascript" src="./Scripts/Js/index.js"></script>
+    </footer>
 
+    <script type="text/javascript" src="./Scripts/Js/scripts.js"></script>
+    <!-- <script type="text/javascript" src="./Scripts/Js/app.js"></script> -->
 </body>
 </html>
